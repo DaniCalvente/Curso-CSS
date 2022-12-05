@@ -1,0 +1,77 @@
+/* SELECTORES */
+
+/* 
+    Selectores Simples
+        Selectores Elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de Atributo
+            id -> #id del elemento 
+            clase -> .clase del elemento
+            otros atributos
+              [atributo]
+              [atributo = valor]
+              [atributo^=valor] chequea que empieza por ese valor
+              [atributo*=valor] chequea que contiene ese valor en cualquier posición
+              [atributo$=valor] chequea que termina por ese valor
+              [atributo|=valor]
+
+    Selectores Compuestos
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases -Pseudoelementos (más adelante)
+*/
+
+/* Selector Universal */
+
+* {
+  background-color: lightcoral;
+}
+
+/* Selector de etiqueta */
+h1 {
+  background-color: lightcyan;
+}
+
+p {
+  background-color: lightgreen;
+}
+ul {
+  background-color: red;
+}
+li {
+  background-color: blue;
+}
+
+#title {
+  background-color: lightgreen;
+}
+
+.text {
+  background-color: lightsalmon;
+}
+
+[href] {
+  background-color: mediumorchid;
+}
+
+[href="https://google.com"]
+{
+  background-color: orangered;
+}
+
+[href^="color"] {
+  background-color: green;
+}
+
+[href*="modo"] {
+  background-color: yellow;
+}
+
+[href$="rojo"] {
+  background-color: crimson;
+}
+
+[lang|="en"] {
+  background-color: magenta;
+}

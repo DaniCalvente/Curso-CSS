@@ -1,0 +1,51 @@
+/* SELECTORES */
+
+/* 
+    Selectores Simples
+        Selectores Elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de Atributo
+            id -> #id del elemento 
+            clase -> .clase del elemento
+            otros atributos
+              [atributo]
+              [atributo = valor]
+              [atributo^=valor] chequea que empieza por ese valor
+              [atributo*=valor] chequea que contiene ese valor en cualquier posición
+              [atributo$=valor] chequea que termina por ese valor
+              [atributo|=valor]
+
+    Selectores Compuestos
+        Selectores Agrupados -> Se agrupan los selectores separados por comas y se escribe el estilo una sola vez 
+        Selectores Combinadores
+            Selector descendente -> Selecciona un elemento dentro de otro
+            Selector de hermano siguiente + -> Selecciona al hermano siguiente adyacente 
+            Selector de hermanos siguientes ~ -> Selecciona  a todos los hermanos siguientes
+            Selector de hijo directo > -> Selecciona SOLO los hijos directos
+*/
+
+/* SELECTORES COMPUESTOS */
+
+/* .text,
+.text-2,
+.text-3,
+.text-4 {
+  background-color: steelblue;
+} */
+
+div .title-2 {
+  background-color: teal;
+}
+
+.text-2 + .title-2 {
+  background-color: tomato;
+}
+
+.text-2 ~ p {
+  background-color: teal;
+}
+
+.container > p {
+  background-color: tomato;
+}
